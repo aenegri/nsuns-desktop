@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>nSuns</title>
+
+    <script src="../public/js/index.js"></script>
+
+    <link rel="stylesheet" href="app.css">
+
+    <link rel="stylesheet" href="../lib/mdl/material.min.css">
+    <script src="../lib/mdl/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+    <div class="block">
+      <h5 class="item">Training Maxes</h5>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label tm-div">
+          <input class="mdl-textfield__input" type="text" maxlength="8" size="8" pattern="-?[0-9]*(\.[0-9]+)?" id="tm-squat">
+          <label class="mdl-textfield__label" for="tm-squat">Squat</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label tm-div">
+          <input class="mdl-textfield__input" type="text" maxlength="8" pattern="-?[0-9]*(\.[0-9]+)?" id="tm-bp">
+          <label class="mdl-textfield__label" for="tm-bp">Bench Press</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label tm-div">
+          <input class="mdl-textfield__input" type="text" maxlength="8" pattern="-?[0-9]*(\.[0-9]+)?" id="tm-dl">
+          <label class="mdl-textfield__label" for="tm-dl">Deadlift</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label tm-div">
+          <input class="mdl-textfield__input" type="text" maxlength="8" pattern="-?[0-9]*(\.[0-9]+)?" id="tm-ohp">
+          <label class="mdl-textfield__label" for="tm-ohp">Overhead Press</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent item" id="reset">
+          Reset
+        </button>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored item" id="save">
+            Save
+        </button>
+    </div>
+  </body>
+</html>
